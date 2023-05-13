@@ -4,7 +4,7 @@
         <div class="content-center">
             <div class="container">
                 <div class="title-brand">
-                    <h1 class="presentation-title">Plan my trip</h1>
+                    <h1 class="presentation-title">Trip me up!</h1>
                     <div class="fog-low">
                         <img src="assets/img/fog-low.png" alt="">
                     </div>
@@ -12,19 +12,53 @@
                         <img src="assets/img/fog-low.png" alt="">
                     </div>
                 </div>
+                <div class="content-center">
+                    <app-modal-component></app-modal-component>
+                </div>
 
 <!--                <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 7</h2>-->
             </div>
         </div>
-        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
-<!--        <h6 class=" category-absolute ml-auto mr-auto">Designed and coded by-->
-<!--        &lt;!&ndash; <h6 class="category category-absolute">Designed and coded by &ndash;&gt;-->
 
-<!--            <a href="https://www.creative-tim.com" target="_blank">-->
-<!--                <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo">-->
-<!--            </a>-->
-<!--        </h6>-->
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+
+<!--        <div class="row">-->
+<!--            <div class="content-center">-->
+<!--                <form class="form-inline">-->
+<!--                    <div class="form-group">-->
+<!--                        <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">-->
+<!--                            <input class="form-control" placeholder="yyyy-mm-dd"-->
+<!--                                   name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />-->
+<!--                            <div class="input-group-append">-->
+<!--                                              <span class="glyphicon glyphicon-calendar input-group-text">-->
+<!--                                                <i class="fa fa-calendar" aria-hidden="true"></i>-->
+<!--                                              </span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
+
+    <div class="section section-dark section-nucleo-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 ">
+                    <h2 class="title">My trips</h2><br/>
+                    <p class="description">
+                    </p><br/>
+                    <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                    <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <img src="assets/img/clouds.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
       <app-basicelements></app-basicelements>
       <app-navigation></app-navigation>

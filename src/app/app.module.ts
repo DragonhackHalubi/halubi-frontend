@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { ComponentsModule } from './components/components.module';
+import { HomeModule } from './components/home.module';
 import { ExamplesModule } from './examples/examples.module';
 
 
@@ -24,7 +24,7 @@ import { ExamplesModule } from './examples/examples.module';
     NgbModule,
     FormsModule,
     RouterModule,
-    ComponentsModule,
+    HomeModule,
     ExamplesModule,
     AppRoutingModule,
   ],

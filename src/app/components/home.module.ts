@@ -10,7 +10,7 @@ import { BasicelementsComponent } from './basicelements/basicelements.component'
 import { NavigationComponent } from './navigation/navigation.component';
 import { TypographyComponent } from './typography/typography.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
-import { ComponentsComponent } from './components.component';
+import { HomeComponent } from './home.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
@@ -25,7 +25,7 @@ import { NgbdModalContent } from './modal/modal.component';
         JwBootstrapSwitchNg2Module
     ],
     declarations: [
-        ComponentsComponent,
+        HomeComponent,
         BasicelementsComponent,
         NavigationComponent,
         TypographyComponent,
@@ -35,6 +35,6 @@ import { NgbdModalContent } from './modal/modal.component';
         NgbdModalContent
     ],
     entryComponents: [NgbdModalContent],
-    exports:[ ComponentsComponent ]
+    exports:[ HomeComponent ]
 })
-export class ComponentsModule { }
+export class HomeModule { }

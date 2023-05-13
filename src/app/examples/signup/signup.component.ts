@@ -9,7 +9,12 @@ export class SignupComponent implements OnInit {
     test : Date = new Date();
     focus;
     focus1;
+    interests: ["sightseeing", "local cuisine", "adventure sports", "nature", "wellness", "photography", "history", "shopping", "festivals & events", "nightlife", "architecture", "art & museums", "recreation"];
     constructor() { }
 
     ngOnInit() {}
+
+    changeButton(event: any) {
+        event.selected = !event.selected;
+    }
 }

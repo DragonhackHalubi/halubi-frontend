@@ -3,7 +3,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-components',
-    templateUrl: './components.component.html',
+    templateUrl: './home.component.html',
     styles: [`
     ngb-progressbar {
         margin-top: 5rem;
@@ -11,7 +11,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     `]
 })
 
-export class ComponentsComponent implements OnInit {
+export class HomeComponent implements OnInit {
     page = 4;
     page1 = 5;
     focus;
@@ -42,4 +42,7 @@ export class ComponentsComponent implements OnInit {
         }
     }
 
+    create() {
+
+    }
 }
