@@ -5468,7 +5468,7 @@ jQuery.each({
 // IE submit delegation
 if ( !jQuery.support.submitBubbles ) {
 
-	jQuery.event.special.submit = {
+	jQuery.event.special.onSubmit = {
 		setup: function() {
 			// Only need this for delegated form submit events
 			if ( jQuery.nodeName( this, "form" ) ) {

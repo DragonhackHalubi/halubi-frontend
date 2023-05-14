@@ -14,6 +14,8 @@ export class BasicelementsComponent implements OnInit {
     @Input("feeling")
     feeling;
 
+    showRecommendation = false;
+
     recommend: string = "How about visiting Val di Non, located in Trentino-Alto Adige in North Italy. It is a stunning valley with beautiful scenery, charming villages, and delicious local cuisine.";
 
     constructor() { }
@@ -24,7 +26,7 @@ export class BasicelementsComponent implements OnInit {
         return this.feeling;
     }
 
-    submit($event: any) {
-        this.feeling = event;
+    onSubmit($event: any) {
+        this.showRecommendation = true;
     }
 }

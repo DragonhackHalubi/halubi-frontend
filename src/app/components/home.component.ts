@@ -14,9 +14,6 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     .carousel-caption {
         color: white !important;
     }
-    .carousel-create {
-        
-    }
         
     `]
 })
@@ -29,14 +26,14 @@ export class HomeComponent implements OnInit {
     focus2;
     date: {year: number, month: number};
     model: NgbDateStruct;
-    // trips: {"trip_id": number, "user_id": number, "trip_json": {"location": string, "activities": string[]}}[]
-    trips: any = [{ "trip_id": 1, "user_id": 1, "trip_json": [ {"location": "Ljubljana", "activities": ["Zmajski most", "Ljubljanski grad", "Nebotičnik"] },
-            {"location": "Koper", "activities": ["swimming"]}]},
+    trips: any = [{ "trip_id": 1, "user_id": 1, "trip_json": [ {"location": "New-York"}, {"location": "Philadelphia"}]},
             { "trip_id": 2, "user_id": 1, "trip_json": [ {"location": "London", "activities": ["London Eye", "Tower bridge"] },
                 {"location": "Cambridge", "activities": ["University"]}]},
             { "trip_id": 3, "user_id": 1, "trip_json": [ {"location": "Monaco", "activities": ["Beach restaurant", "swimming"] },
                 {"location": "Saint-Tropez", "activities": ["special coctails"]},
-                {"location": "Genova", "activities": ["local pasta"]}]}];
+                {"location": "Genova", "activities": ["local pasta"]}]},
+            { "trip_id": 4, "user_id": 1, "trip_json": [ {"location": "Ljubljana", "activities": ["Zmajski most", "Ljubljanski grad", "Nebotičnik"] },
+                    {"location": "Koper", "activities": ["swimming"]}]}];
     constructor( private renderer : Renderer2) {}
     isWeekend(date: NgbDateStruct) {
         const d = new Date(date.year, date.month - 1, date.day);
