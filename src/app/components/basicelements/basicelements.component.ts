@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-basicelements',
@@ -10,8 +10,21 @@ export class BasicelementsComponent implements OnInit {
     doubleSlider = [20, 60];
     state_default: boolean = true;
     focus: any;
+
+    @Input("feeling")
+    feeling;
+
+    recommend: string = "How about visiting Val di Non, located in Trentino-Alto Adige in North Italy. It is a stunning valley with beautiful scenery, charming villages, and delicious local cuisine.";
+
     constructor() { }
 
     ngOnInit() {}
 
+    getFeeling() {
+        return this.feeling;
+    }
+
+    submit($event: any) {
+        this.feeling = event;
+    }
 }

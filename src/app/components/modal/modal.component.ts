@@ -21,7 +21,8 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
             <button type="button" class="btn btn-danger btn-link" (click)="activeModal.close('Close click')">DELETE</button>
         </div>
     </div>
-    `
+    `,
+    styleUrls: ['./modal.component.scss']
 })
 export class NgbdModalContent {
     @Input() name;

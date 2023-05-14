@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="https://www.creative-tim.com">Halubi</a>
+            <a class="navbar-brand" href="#">Halubi</a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -10,11 +10,21 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
+                <li _ngcontent-jhn-c67="" class="nav-item">
+                    <a _ngcontent-jhn-c67="" href="#" class="nav-link">
+                        <i _ngcontent-jhn-c67="" aria-hidden="true" class="nc-icon nc-compass-05"></i>
+                    </a>
+                </li>
                 <li class="nav-item" *ngIf="isLoged()">
                     <a [routerLink]="['/signup']"class="nav-link">Log in</a>
                 </li>
                 <li class="nav-item" *ngIf="!isLoged()">
-                    <a [routerLink]="['/user-profile']" class="nav-link"><i class="nc-icon nc-single-02"></i></a>
+                    <a [routerLink]="['/user-details']" class="nav-link"><i class="nc-icon nc-single-02"></i></a>
+                </li>
+                <li _ngcontent-jhn-c67="" class="nav-item">
+                    <a _ngcontent-jhn-c67="" href="#" class="nav-link">
+                        <i _ngcontent-jhn-c67="" aria-hidden="true" class="nc-icon nc-settings-gear-65"></i>
+                    </a>
                 </li>
             </ul>
         </div>
