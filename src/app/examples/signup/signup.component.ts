@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-signup',
@@ -9,13 +10,22 @@ export class SignupComponent implements OnInit {
     test : Date = new Date();
     focus;
     focus1;
+    selectedInterests = [];
     interests = ["sightseeing", "local cuisine", "adventure sports", "nature", "wellness", "photography", "history", "shopping", "festivals & events", "nightlife", "architecture", "art & museums", "recreation", "geeky stuff", "hidden jams"];
-    constructor() { }
+    constructor(private router: Router) {}
 
     ngOnInit() {}
 
-    changeButton(event: any) {
-        console.log(event);
-        event.selected = !event.selected;
+    selectInterest(event: any) {
+        console.log(this.selectedInterests);
+        this.selectedInterests.push(event.srcElement.innerText);
+    }
+
+    isSelected(item: any) {
+        return this.selectedInterests.includes(item.toUpperCase());
+    }
+
+    registerUser() {
+        this.router.navigate(['/home']);
     }
 }

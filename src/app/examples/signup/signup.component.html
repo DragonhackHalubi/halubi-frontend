@@ -18,7 +18,8 @@
                           </div>
                           <label>Interests</label>
                           <div class=""  [ngClass]="{'input-group-focus':focus1===true}">
-                              <button *ngFor="let item of interests;" class="btn btn-outline-neutral btn-round btn-sm m-1" (click)="changeButton($event)">
+                              <button *ngFor="let item of interests;" type="button" class="btn btn-outline-neutral btn-round btn-sm m-1"
+                                      (click)="selectInterest($event)" [ngClass]="{'selected': isSelected(item)}">
                                   {{ item }}
                               </button>
                           </div>
@@ -40,7 +41,7 @@
                               </div>
                               <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
                           </div>
-                          <button class="btn btn-danger btn-block btn-round" href="/home">Register</button>
+                          <button class="btn btn-danger btn-block btn-round" (click)="registerUser()">Register</button>
                       </form>
                       <div class="forgot">
                           <a href="#" class="btn btn-link btn-danger">Already signed in?</a>
